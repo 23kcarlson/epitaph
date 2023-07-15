@@ -2,9 +2,9 @@ import Head from 'next/head'
 import {useSession} from "next-auth/react"
 import AdminSidebar from '@/components/admin-sidebar'
 import LoginBtn from '@/components/login-btn'
-
 export default function Records() {
 	const { data: session } = useSession()
+	
 	if (!session) return (
 		<>
 			<Head>  
